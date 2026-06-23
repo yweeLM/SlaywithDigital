@@ -1,5 +1,0 @@
-git clone https://github.com/yweeLM/sav-waitlist.git
-cd sav-waitlist
-git checkout claude/great-wright-ealx1x
-git subtree split --prefix=slaywithdigital -b slaywithdigital-export
-git push https://github.com/yweeLM/slaywithdigital.git slaywithdigital-export:main
