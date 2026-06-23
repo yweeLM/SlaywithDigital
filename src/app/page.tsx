@@ -96,9 +96,9 @@ function Hero() {
                         <p className="mt-8 text-sm text-muted">
                             Strategy shaped alongside teams at{" "}
                             <span className="font-semibold text-ink">Google</span>,{" "}
-                            <span className="font-semibold text-ink">JPMorgan</span>,{" "}
-                            <span className="font-semibold text-ink">PwC</span> and{" "}
-                            <span className="font-semibold text-ink">MTN</span>.
+                            <span className="font-semibold text-ink">Bloomberg</span>,{" "}
+                            <span className="font-semibold text-ink">JPMorgan</span> and{" "}
+                            <span className="font-semibold text-ink">PwC</span>.
                         </p>
                     </Reveal>
                 </div>
@@ -187,7 +187,7 @@ function Marquee() {
     return (
         <section className="border-y border-line bg-cream py-7">
             <p className="mb-5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-                Spoken to &amp; consulted for
+                Worked at &amp; consulted with
             </p>
             <div className="group/marquee relative overflow-hidden">
                 <div className="flex w-max animate-marquee items-center gap-12 pr-12">
@@ -417,9 +417,9 @@ function Testimonials() {
 function About() {
     return (
         <section id="about" className="scroll-mt-20 bg-cream py-20 sm:py-28">
-            <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 sm:px-8 md:grid-cols-[0.8fr_1.2fr] md:gap-14">
+            <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 sm:px-8 md:grid-cols-[0.6fr_1.4fr] md:gap-14">
                 <Reveal>
-                    <div className="relative mx-auto w-full max-w-xs">
+                    <div className="relative mx-auto w-full max-w-[220px]">
                         <div
                             aria-hidden
                             className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-3xl bg-brand/15"
@@ -444,13 +444,21 @@ function About() {
                         </h2>
                     </Reveal>
                     <Reveal delay={120}>
-                        <p className="mt-5 text-lg leading-relaxed text-muted">
-                            Slay with Digital is led by Yetty Williams, founder of
-                            LagosMums and a digital media strategist with over 20 years
-                            of internationally relevant experience growing brands and
-                            audiences online. She has spoken and consulted for Google,
-                            JPMorgan, PwC, Lagos Business School and more.
-                        </p>
+                        <div className="mt-5 space-y-4 text-lg leading-relaxed text-muted">
+                            <p>
+                                Slay with Digital is led by Yetty Williams, a digital
+                                media marketing strategist with over 20 years of
+                                internationally relevant experience growing brands,
+                                managing stakeholders, and helping small and large
+                                corporations drive their business growth.
+                            </p>
+                            <p>
+                                As lead consultant she offers fractional services, has
+                                successfully built a brand that reaches millions every
+                                year, and is the founder of the 7 C&apos;s to Slay with
+                                Digital and AI framework.
+                            </p>
+                        </div>
                     </Reveal>
                     <Reveal delay={180}>
                         <ul className="mt-6 flex flex-wrap gap-2.5">
@@ -463,6 +471,29 @@ function About() {
                                 </li>
                             ))}
                         </ul>
+                    </Reveal>
+                    <Reveal delay={240}>
+                        <div className="mt-7">
+                            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+                                Accredited &amp; assured
+                            </p>
+                            <div className="mt-3 flex flex-wrap items-center gap-5">
+                                <Image
+                                    src="/badge-ai-business-mentors.png"
+                                    alt="AI for Business Mentors, ILM Assured"
+                                    width={150}
+                                    height={161}
+                                    className="h-20 w-auto"
+                                />
+                                <Image
+                                    src="/badge-emcc-eia.png"
+                                    alt="EMCC Global Individual Accreditation, EIA Practitioner"
+                                    width={210}
+                                    height={119}
+                                    className="h-16 w-auto"
+                                />
+                            </div>
+                        </div>
                     </Reveal>
                 </div>
             </div>
@@ -573,14 +604,6 @@ function Footer() {
                                         href={config.social.linkedin}
                                     >
                                         LinkedIn
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className="hover:text-brand"
-                                        href={config.social.lagosMums}
-                                    >
-                                        LagosMums
                                     </a>
                                 </li>
                             </ul>

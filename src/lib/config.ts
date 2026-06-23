@@ -25,14 +25,13 @@ export const config = {
         "https://digitalsavvy.getformly.com/swdaudit",
 
     contact: {
-        email: "yetty@yettywilliams.com",
+        email: "yetty@SlaywithDigital.com",
         phone: "+44 7787 525 391",
     },
 
     social: {
         instagram: "https://instagram.com/slaywithdigital",
         linkedin: "https://www.linkedin.com/in/yettywilliams",
-        lagosMums: "https://lagosmums.com",
     },
 
     founder: {
@@ -41,20 +40,15 @@ export const config = {
     },
 } as const;
 
-/** Brands Slay with Digital has spoken to or consulted for. Shown in the marquee. */
+/** Companies Yetty has worked at or consulted with. Shown in the marquee. */
 export const companies: string[] = [
     "Google",
+    "Bloomberg",
     "JPMorgan",
-    "Visa",
+    "Wachovia Bank (now Wells Fargo Bank UK)",
     "PwC",
-    "BBC Radio",
-    "Lagos Business School",
-    "MTN",
-    "AXA Mansard",
-    "Old Mutual",
-    "Union Bank",
-    "Sterling Bank",
-    "BellaNaija",
+    "Nestlé",
+    "Procter & Gamble",
 ];
 
 /** The signature framework. The interactive grid renders these in order. */
@@ -132,15 +126,17 @@ export const testimonials: { quote: string; name: string }[] = [
         name: "Funke Giwa",
     },
     {
-        quote: "Your session was electrifying and fascinating. Thank you so much for that. The institute appreciates you.",
-        name: "Family Systems Engineering Institute",
+        quote: "I chose to continue our mentorship because I felt that you offered me the right support. I was so happy with what you offered me during our time together on the Help to Grow program. What I particularly like about your approach to mentoring is that you are incredibly supportive, and I love the personal touch you bring. I would absolutely recommend you to anybody who is looking to scale their business.",
+        name: "Jemima, Help to Grow Program Participant",
     },
 ];
 
 export const credentials: string[] = [
-    "Forbes Over 50 honoree",
-    "Yale MBA, Finance & Strategy",
-    "Cambridge, Strategic Digital Media Marketing",
-    "Accredited Coach, EMCC",
-    "Author, Digital Savvy Parenting",
+    "Forbes Over 30 Under 50",
+    "MBA, Yale School of Management",
+    "Strategic Digital Media Marketing, University of Cambridge",
+    "Trained in cyberpsychology",
+    "Accredited coach & mentor, EMCC",
+    "Business mentor, Help to Grow (UK Gov)",
+    "Advisory board, Good Future Foundation UK",
 ];
